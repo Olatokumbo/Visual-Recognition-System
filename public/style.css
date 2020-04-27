@@ -1,0 +1,75 @@
+body{
+    background-color: teal;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    width: fit-content;
+    margin: auto;
+}
+img{
+    width: 28rem;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    border-radius: 10px;
+}
+/* body{
+    text-align: center;
+} */
+.container{
+text-align: center;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: auto;
+    text-align: center;
+    border: 2px solid;
+    border-color:#C09591;
+    border-radius: 30px;
+    margin-top: 2rem;
+    background-color: #a54843;
+}
+ .header{
+    background-color: #a54843;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.header h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.goBack{
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    background-color: tomato;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
+    margin: 2rem;
+}
+.data{
+    padding: 1rem;
+}
+.data .dataMain{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: orange;
+    border-radius: 30px;
+
+}
+.data .hierarchy{
+    padding: 1rem;
+    background-color: #35B5AC;
+    border-radius: 30px;
+}
+.goBack:hover{
+background-color: rgb(245, 58, 24);
+}

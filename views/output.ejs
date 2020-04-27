@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web based Visual Recognition System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h2>Web based Visual Recognition System</h2>
+            <img src="<%=path%>">
+        </div>
+        <div class="results">
+            <div class="header">
+                <h1>Results</h1>
+            </div>
+        <div class="data">
+        <% for(i=0;i<data.length;i++){ %>
+            <!-- console.log(jsson.images[0].classifiers[0].classes[i].class); -->
+            <!-- console.log(jsson.images[0].classifiers[0].classes[i].score); -->
+            <!-- <span>Class: <%=data[i].class%>&emsp;</span> -->
+            <!-- <span>Score: <%=data[i].score%></span> -->
+            <!-- <span>Type_hierarchy: <%=data[i].type_hierarchy%></span> -->
+            <div class="dataMain">
+            <span class="class"><%=data[i].class%>&emsp;</span>
+            <span class="score"><%=(data[i].score*100).toFixed(0)%>%</span>
+            </div>
+            <br>
+            <%if(data[i].type_hierarchy!=undefined){%>
+            <!-- <h5>Category<h5> -->
+            <div class="hierarchy">
+            <span><%=data[i].type_hierarchy%></span>
+            </div>
+            <br>
+            <br>
+            <%}%>
+         <% }%>
+            </div>
+            </div>
+            <a href="/" class="goBack">Scan New Photo</a>
+        <span></span>
+    </div>
+</body>
+</html>
